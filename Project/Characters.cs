@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project
 {
+    // This class holds the name and image of each of the 12 characters
     public partial class Characters
     {
         // Properties
