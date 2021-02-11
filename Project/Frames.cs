@@ -9,18 +9,18 @@ namespace Project
     public partial class Frames
     {
         // Properties
-        /*public string startUp { get; set; }
-        public string onBlock { get; set; }
+        public int startUp { get; set; }
+        public int onBlock { get; set; }
 
         // Constructors
-        public Characters(string Name, string Image)
+        public Frames(string startUp, string Image)
         {
             this.Name = Name;
             this.Image = Image;
         }
 
         // Default Contructor
-        public Characters() : this("", "")
+        public Frames() : this("", "")
         {
 
         }
@@ -28,7 +28,7 @@ namespace Project
         // Methods
         public override string ToString()
         {
-            return Name;
-        }*/
+            
+        }
     }
 }
