@@ -1,0 +1,1767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SSBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BackAirs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BThrows">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Characters">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Image" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DashAttacks">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DashGrabs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DownAirs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DownBs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DownSmashes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DThrows">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DTilts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ForwardAirs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FSmashes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+          <Property Name="CharacterId1" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FThrows">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FTilts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Grabs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NeutralAirs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NeutralBs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PivotGrabs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pummels">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SideBs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UpAirs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UpBs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UpSmashes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UThrows">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UTilts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StartUp" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="OnBlock" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="GIF" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CharacterId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CharacterBackAir">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="BackAirs" Type="Self.BackAirs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BackAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterBThrow">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="BThrows" Type="Self.BThrows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDashAttack">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DashAttacks" Type="Self.DashAttacks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DashAttacks">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDashGrab">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DashGrabs" Type="Self.DashGrabs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DashGrabs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDownAir">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DownAirs" Type="Self.DownAirs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DownAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDownB">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DownBs" Type="Self.DownBs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DownBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDownSmash">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DownSmashes" Type="Self.DownSmashes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DownSmashes">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDThrow">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DThrows" Type="Self.DThrows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDTilt">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="DTilts" Type="Self.DTilts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DTilts">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterForwardAir">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="ForwardAirs" Type="Self.ForwardAirs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ForwardAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFSmash">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="FSmashes" Type="Self.FSmashes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FSmashes">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFSmash1">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="FSmashes" Type="Self.FSmashes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FSmashes">
+              <PropertyRef Name="CharacterId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFThrow">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="FThrows" Type="Self.FThrows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFTilt">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="FTilts" Type="Self.FTilts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FTilts">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterGrab">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="Grabs" Type="Self.Grabs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Grabs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterNeutralAir">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="NeutralAirs" Type="Self.NeutralAirs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NeutralAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterNeutralB">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="NeutralBs" Type="Self.NeutralBs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NeutralBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterPivotGrab">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="PivotGrabs" Type="Self.PivotGrabs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PivotGrabs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterPummel">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="Pummels" Type="Self.Pummels" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pummels">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterSideB">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="SideBs" Type="Self.SideBs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SideBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUpAir">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="UpAirs" Type="Self.UpAirs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UpAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUpB">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="UpBs" Type="Self.UpBs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UpBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUpSmash">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="UpSmashes" Type="Self.UpSmashes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UpSmashes">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUThrow">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="UThrows" Type="Self.UThrows" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUTilt">
+          <End Role="Characters" Type="Self.Characters" Multiplicity="1" />
+          <End Role="UTilts" Type="Self.UTilts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UTilts">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SSBModelStoreContainer">
+          <EntitySet Name="BackAirs" EntityType="Self.BackAirs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BThrows" EntityType="Self.BThrows" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Characters" EntityType="Self.Characters" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DashAttacks" EntityType="Self.DashAttacks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DashGrabs" EntityType="Self.DashGrabs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DownAirs" EntityType="Self.DownAirs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DownBs" EntityType="Self.DownBs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DownSmashes" EntityType="Self.DownSmashes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DThrows" EntityType="Self.DThrows" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DTilts" EntityType="Self.DTilts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ForwardAirs" EntityType="Self.ForwardAirs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FSmashes" EntityType="Self.FSmashes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FThrows" EntityType="Self.FThrows" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FTilts" EntityType="Self.FTilts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Grabs" EntityType="Self.Grabs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NeutralAirs" EntityType="Self.NeutralAirs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NeutralBs" EntityType="Self.NeutralBs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PivotGrabs" EntityType="Self.PivotGrabs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pummels" EntityType="Self.Pummels" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SideBs" EntityType="Self.SideBs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UpAirs" EntityType="Self.UpAirs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UpBs" EntityType="Self.UpBs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UpSmashes" EntityType="Self.UpSmashes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UThrows" EntityType="Self.UThrows" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UTilts" EntityType="Self.UTilts" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CharacterBackAir" Association="Self.FK_CharacterBackAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="BackAirs" EntitySet="BackAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterBThrow" Association="Self.FK_CharacterBThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="BThrows" EntitySet="BThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDashAttack" Association="Self.FK_CharacterDashAttack">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DashAttacks" EntitySet="DashAttacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDashGrab" Association="Self.FK_CharacterDashGrab">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DashGrabs" EntitySet="DashGrabs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDownAir" Association="Self.FK_CharacterDownAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DownAirs" EntitySet="DownAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDownB" Association="Self.FK_CharacterDownB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DownBs" EntitySet="DownBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDownSmash" Association="Self.FK_CharacterDownSmash">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DownSmashes" EntitySet="DownSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDThrow" Association="Self.FK_CharacterDThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DThrows" EntitySet="DThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDTilt" Association="Self.FK_CharacterDTilt">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DTilts" EntitySet="DTilts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterForwardAir" Association="Self.FK_CharacterForwardAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="ForwardAirs" EntitySet="ForwardAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFSmash" Association="Self.FK_CharacterFSmash">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FSmashes" EntitySet="FSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFSmash1" Association="Self.FK_CharacterFSmash1">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FSmashes" EntitySet="FSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFThrow" Association="Self.FK_CharacterFThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FThrows" EntitySet="FThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFTilt" Association="Self.FK_CharacterFTilt">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FTilts" EntitySet="FTilts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterGrab" Association="Self.FK_CharacterGrab">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="Grabs" EntitySet="Grabs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterNeutralAir" Association="Self.FK_CharacterNeutralAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="NeutralAirs" EntitySet="NeutralAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterNeutralB" Association="Self.FK_CharacterNeutralB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="NeutralBs" EntitySet="NeutralBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPivotGrab" Association="Self.FK_CharacterPivotGrab">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="PivotGrabs" EntitySet="PivotGrabs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPummel" Association="Self.FK_CharacterPummel">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="Pummels" EntitySet="Pummels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterSideB" Association="Self.FK_CharacterSideB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="SideBs" EntitySet="SideBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUpAir" Association="Self.FK_CharacterUpAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UpAirs" EntitySet="UpAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUpB" Association="Self.FK_CharacterUpB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UpBs" EntitySet="UpBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUpSmash" Association="Self.FK_CharacterUpSmash">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UpSmashes" EntitySet="UpSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUThrow" Association="Self.FK_CharacterUThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UThrows" EntitySet="UThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUTilt" Association="Self.FK_CharacterUTilt">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UTilts" EntitySet="UTilts" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SSBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BackAir">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterBackAir" FromRole="BackAirs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="BThrow">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterBThrow" FromRole="BThrows" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="Character">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="BackAirs" Relationship="Self.FK_CharacterBackAir" FromRole="Characters" ToRole="BackAirs" />
+          <NavigationProperty Name="BThrows" Relationship="Self.FK_CharacterBThrow" FromRole="Characters" ToRole="BThrows" />
+          <NavigationProperty Name="DashAttacks" Relationship="Self.FK_CharacterDashAttack" FromRole="Characters" ToRole="DashAttacks" />
+          <NavigationProperty Name="DashGrabs" Relationship="Self.FK_CharacterDashGrab" FromRole="Characters" ToRole="DashGrabs" />
+          <NavigationProperty Name="DownAirs" Relationship="Self.FK_CharacterDownAir" FromRole="Characters" ToRole="DownAirs" />
+          <NavigationProperty Name="DownBs" Relationship="Self.FK_CharacterDownB" FromRole="Characters" ToRole="DownBs" />
+          <NavigationProperty Name="DownSmashes" Relationship="Self.FK_CharacterDownSmash" FromRole="Characters" ToRole="DownSmashes" />
+          <NavigationProperty Name="DThrows" Relationship="Self.FK_CharacterDThrow" FromRole="Characters" ToRole="DThrows" />
+          <NavigationProperty Name="DTilts" Relationship="Self.FK_CharacterDTilt" FromRole="Characters" ToRole="DTilts" />
+          <NavigationProperty Name="ForwardAirs" Relationship="Self.FK_CharacterForwardAir" FromRole="Characters" ToRole="ForwardAirs" />
+          <NavigationProperty Name="FSmashes" Relationship="Self.FK_CharacterFSmash" FromRole="Characters" ToRole="FSmashes" />
+          <NavigationProperty Name="FSmashes1" Relationship="Self.FK_CharacterFSmash1" FromRole="Characters" ToRole="FSmashes" />
+          <NavigationProperty Name="FThrows" Relationship="Self.FK_CharacterFThrow" FromRole="Characters" ToRole="FThrows" />
+          <NavigationProperty Name="FTilts" Relationship="Self.FK_CharacterFTilt" FromRole="Characters" ToRole="FTilts" />
+          <NavigationProperty Name="Grabs" Relationship="Self.FK_CharacterGrab" FromRole="Characters" ToRole="Grabs" />
+          <NavigationProperty Name="NeutralAirs" Relationship="Self.FK_CharacterNeutralAir" FromRole="Characters" ToRole="NeutralAirs" />
+          <NavigationProperty Name="NeutralBs" Relationship="Self.FK_CharacterNeutralB" FromRole="Characters" ToRole="NeutralBs" />
+          <NavigationProperty Name="PivotGrabs" Relationship="Self.FK_CharacterPivotGrab" FromRole="Characters" ToRole="PivotGrabs" />
+          <NavigationProperty Name="Pummels" Relationship="Self.FK_CharacterPummel" FromRole="Characters" ToRole="Pummels" />
+          <NavigationProperty Name="SideBs" Relationship="Self.FK_CharacterSideB" FromRole="Characters" ToRole="SideBs" />
+          <NavigationProperty Name="UpAirs" Relationship="Self.FK_CharacterUpAir" FromRole="Characters" ToRole="UpAirs" />
+          <NavigationProperty Name="UpBs" Relationship="Self.FK_CharacterUpB" FromRole="Characters" ToRole="UpBs" />
+          <NavigationProperty Name="UpSmashes" Relationship="Self.FK_CharacterUpSmash" FromRole="Characters" ToRole="UpSmashes" />
+          <NavigationProperty Name="UThrows" Relationship="Self.FK_CharacterUThrow" FromRole="Characters" ToRole="UThrows" />
+          <NavigationProperty Name="UTilts" Relationship="Self.FK_CharacterUTilt" FromRole="Characters" ToRole="UTilts" />
+          <NavigationProperty Name="FSmashes11" Relationship="SSBModel.FK_CharacterFSmash11" FromRole="Character" ToRole="FSmash" />
+        </EntityType>
+        <EntityType Name="DashAttack">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDashAttack" FromRole="DashAttacks" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="DashGrab">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDashGrab" FromRole="DashGrabs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="DownAir">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDownAir" FromRole="DownAirs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="DownB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDownB" FromRole="DownBs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="DownSmash">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDownSmash" FromRole="DownSmashes" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="DThrow">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDThrow" FromRole="DThrows" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="DTilt">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterDTilt" FromRole="DTilts" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="ForwardAir">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterForwardAir" FromRole="ForwardAirs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="FSmash">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <Property Name="CharacterId1" Nullable="false" Type="Int32" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterFSmash" FromRole="FSmashes" ToRole="Characters" />
+          <NavigationProperty Name="Character1" Relationship="Self.FK_CharacterFSmash1" FromRole="FSmashes" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="FThrow">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterFThrow" FromRole="FThrows" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="FTilt">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterFTilt" FromRole="FTilts" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="Grab">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterGrab" FromRole="Grabs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="NeutralAir">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterNeutralAir" FromRole="NeutralAirs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="NeutralB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterNeutralB" FromRole="NeutralBs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="PivotGrab">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterPivotGrab" FromRole="PivotGrabs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="Pummel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterPummel" FromRole="Pummels" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="SideB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterSideB" FromRole="SideBs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="UpAir">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterUpAir" FromRole="UpAirs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="UpB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterUpB" FromRole="UpBs" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="UpSmash">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterUpSmash" FromRole="UpSmashes" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="UThrow">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterUThrow" FromRole="UThrows" ToRole="Characters" />
+        </EntityType>
+        <EntityType Name="UTilt">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StartUp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OnBlock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CharacterId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Character" Relationship="Self.FK_CharacterUTilt" FromRole="UTilts" ToRole="Characters" />
+        </EntityType>
+        <Association Name="FK_CharacterBackAir">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="BackAirs" Type="SSBModel.BackAir" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BackAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterBThrow">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="BThrows" Type="Self.BThrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDashAttack">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DashAttacks" Type="Self.DashAttack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DashAttacks">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDashGrab">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DashGrabs" Type="Self.DashGrab" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DashGrabs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDownAir">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DownAirs" Type="Self.DownAir" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DownAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDownB">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DownBs" Type="Self.DownB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DownBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDownSmash">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DownSmashes" Type="Self.DownSmash" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DownSmashes">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDThrow">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DThrows" Type="Self.DThrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterDTilt">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="DTilts" Type="Self.DTilt" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DTilts">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterForwardAir">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="ForwardAirs" Type="Self.ForwardAir" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ForwardAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFSmash">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="FSmashes" Type="Self.FSmash" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FSmashes">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFSmash1">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="FSmashes" Type="Self.FSmash" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FSmashes">
+              <PropertyRef Name="CharacterId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFThrow">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="FThrows" Type="Self.FThrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterFTilt">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="FTilts" Type="Self.FTilt" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FTilts">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterGrab">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="Grabs" Type="Self.Grab" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Grabs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterNeutralAir">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="NeutralAirs" Type="Self.NeutralAir" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NeutralAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterNeutralB">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="NeutralBs" Type="Self.NeutralB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NeutralBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterPivotGrab">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="PivotGrabs" Type="Self.PivotGrab" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PivotGrabs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterPummel">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="Pummels" Type="Self.Pummel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pummels">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterSideB">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="SideBs" Type="Self.SideB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SideBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUpAir">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="UpAirs" Type="Self.UpAir" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UpAirs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUpB">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="UpBs" Type="Self.UpB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UpBs">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUpSmash">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="UpSmashes" Type="Self.UpSmash" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UpSmashes">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUThrow">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="UThrows" Type="Self.UThrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UThrows">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterUTilt">
+          <End Role="Characters" Type="Self.Character" Multiplicity="1" />
+          <End Role="UTilts" Type="Self.UTilt" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Characters">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UTilts">
+              <PropertyRef Name="CharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SSBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BackAirs" EntityType="SSBModel.BackAir" />
+          <EntitySet Name="BThrows" EntityType="Self.BThrow" />
+          <EntitySet Name="Characters" EntityType="Self.Character" />
+          <EntitySet Name="DashAttacks" EntityType="Self.DashAttack" />
+          <EntitySet Name="DashGrabs" EntityType="Self.DashGrab" />
+          <EntitySet Name="DownAirs" EntityType="Self.DownAir" />
+          <EntitySet Name="DownBs" EntityType="Self.DownB" />
+          <EntitySet Name="DownSmashes" EntityType="Self.DownSmash" />
+          <EntitySet Name="DThrows" EntityType="Self.DThrow" />
+          <EntitySet Name="DTilts" EntityType="Self.DTilt" />
+          <EntitySet Name="ForwardAirs" EntityType="Self.ForwardAir" />
+          <EntitySet Name="FSmashes" EntityType="Self.FSmash" />
+          <EntitySet Name="FThrows" EntityType="Self.FThrow" />
+          <EntitySet Name="FTilts" EntityType="Self.FTilt" />
+          <EntitySet Name="Grabs" EntityType="Self.Grab" />
+          <EntitySet Name="NeutralAirs" EntityType="Self.NeutralAir" />
+          <EntitySet Name="NeutralBs" EntityType="Self.NeutralB" />
+          <EntitySet Name="PivotGrabs" EntityType="Self.PivotGrab" />
+          <EntitySet Name="Pummels" EntityType="Self.Pummel" />
+          <EntitySet Name="SideBs" EntityType="Self.SideB" />
+          <EntitySet Name="UpAirs" EntityType="Self.UpAir" />
+          <EntitySet Name="UpBs" EntityType="Self.UpB" />
+          <EntitySet Name="UpSmashes" EntityType="Self.UpSmash" />
+          <EntitySet Name="UThrows" EntityType="Self.UThrow" />
+          <EntitySet Name="UTilts" EntityType="Self.UTilt" />
+          <AssociationSet Name="FK_CharacterBackAir" Association="Self.FK_CharacterBackAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="BackAirs" EntitySet="BackAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterBThrow" Association="Self.FK_CharacterBThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="BThrows" EntitySet="BThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDashAttack" Association="Self.FK_CharacterDashAttack">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DashAttacks" EntitySet="DashAttacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDashGrab" Association="Self.FK_CharacterDashGrab">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DashGrabs" EntitySet="DashGrabs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDownAir" Association="Self.FK_CharacterDownAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DownAirs" EntitySet="DownAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDownB" Association="Self.FK_CharacterDownB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DownBs" EntitySet="DownBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDownSmash" Association="Self.FK_CharacterDownSmash">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DownSmashes" EntitySet="DownSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDThrow" Association="Self.FK_CharacterDThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DThrows" EntitySet="DThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterDTilt" Association="Self.FK_CharacterDTilt">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="DTilts" EntitySet="DTilts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterForwardAir" Association="Self.FK_CharacterForwardAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="ForwardAirs" EntitySet="ForwardAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFSmash" Association="Self.FK_CharacterFSmash">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FSmashes" EntitySet="FSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFSmash1" Association="Self.FK_CharacterFSmash1">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FSmashes" EntitySet="FSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFThrow" Association="Self.FK_CharacterFThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FThrows" EntitySet="FThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFTilt" Association="Self.FK_CharacterFTilt">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="FTilts" EntitySet="FTilts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterGrab" Association="Self.FK_CharacterGrab">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="Grabs" EntitySet="Grabs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterNeutralAir" Association="Self.FK_CharacterNeutralAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="NeutralAirs" EntitySet="NeutralAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterNeutralB" Association="Self.FK_CharacterNeutralB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="NeutralBs" EntitySet="NeutralBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPivotGrab" Association="Self.FK_CharacterPivotGrab">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="PivotGrabs" EntitySet="PivotGrabs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPummel" Association="Self.FK_CharacterPummel">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="Pummels" EntitySet="Pummels" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterSideB" Association="Self.FK_CharacterSideB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="SideBs" EntitySet="SideBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUpAir" Association="Self.FK_CharacterUpAir">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UpAirs" EntitySet="UpAirs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUpB" Association="Self.FK_CharacterUpB">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UpBs" EntitySet="UpBs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUpSmash" Association="Self.FK_CharacterUpSmash">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UpSmashes" EntitySet="UpSmashes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUThrow" Association="Self.FK_CharacterUThrow">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UThrows" EntitySet="UThrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterUTilt" Association="Self.FK_CharacterUTilt">
+            <End Role="Characters" EntitySet="Characters" />
+            <End Role="UTilts" EntitySet="UTilts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterFSmash11" Association="SSBModel.FK_CharacterFSmash11">
+            <End Role="Character" EntitySet="Characters" />
+            <End Role="FSmash" EntitySet="FSmashes" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="FK_CharacterFSmash11">
+          <End Type="SSBModel.Character" Role="Character" Multiplicity="1" />
+          <End Type="SSBModel.FSmash" Role="FSmash" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Character">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FSmash">
+              <PropertyRef Name="CharacterId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SSBModelStoreContainer" CdmEntityContainer="SSBEntities">
+          <EntitySetMapping Name="BackAirs">
+            <EntityTypeMapping TypeName="SSBModel.BackAir">
+              <MappingFragment StoreEntitySet="BackAirs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BThrows">
+            <EntityTypeMapping TypeName="SSBModel.BThrow">
+              <MappingFragment StoreEntitySet="BThrows">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Characters">
+            <EntityTypeMapping TypeName="SSBModel.Character">
+              <MappingFragment StoreEntitySet="Characters">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DashAttacks">
+            <EntityTypeMapping TypeName="SSBModel.DashAttack">
+              <MappingFragment StoreEntitySet="DashAttacks">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DashGrabs">
+            <EntityTypeMapping TypeName="SSBModel.DashGrab">
+              <MappingFragment StoreEntitySet="DashGrabs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DownAirs">
+            <EntityTypeMapping TypeName="SSBModel.DownAir">
+              <MappingFragment StoreEntitySet="DownAirs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DownBs">
+            <EntityTypeMapping TypeName="SSBModel.DownB">
+              <MappingFragment StoreEntitySet="DownBs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DownSmashes">
+            <EntityTypeMapping TypeName="SSBModel.DownSmash">
+              <MappingFragment StoreEntitySet="DownSmashes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DThrows">
+            <EntityTypeMapping TypeName="SSBModel.DThrow">
+              <MappingFragment StoreEntitySet="DThrows">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DTilts">
+            <EntityTypeMapping TypeName="SSBModel.DTilt">
+              <MappingFragment StoreEntitySet="DTilts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ForwardAirs">
+            <EntityTypeMapping TypeName="SSBModel.ForwardAir">
+              <MappingFragment StoreEntitySet="ForwardAirs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FSmashes">
+            <EntityTypeMapping TypeName="SSBModel.FSmash">
+              <MappingFragment StoreEntitySet="FSmashes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+                <ScalarProperty Name="CharacterId1" ColumnName="CharacterId1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FThrows">
+            <EntityTypeMapping TypeName="SSBModel.FThrow">
+              <MappingFragment StoreEntitySet="FThrows">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FTilts">
+            <EntityTypeMapping TypeName="SSBModel.FTilt">
+              <MappingFragment StoreEntitySet="FTilts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Grabs">
+            <EntityTypeMapping TypeName="SSBModel.Grab">
+              <MappingFragment StoreEntitySet="Grabs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NeutralAirs">
+            <EntityTypeMapping TypeName="SSBModel.NeutralAir">
+              <MappingFragment StoreEntitySet="NeutralAirs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NeutralBs">
+            <EntityTypeMapping TypeName="SSBModel.NeutralB">
+              <MappingFragment StoreEntitySet="NeutralBs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PivotGrabs">
+            <EntityTypeMapping TypeName="SSBModel.PivotGrab">
+              <MappingFragment StoreEntitySet="PivotGrabs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pummels">
+            <EntityTypeMapping TypeName="SSBModel.Pummel">
+              <MappingFragment StoreEntitySet="Pummels">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SideBs">
+            <EntityTypeMapping TypeName="SSBModel.SideB">
+              <MappingFragment StoreEntitySet="SideBs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UpAirs">
+            <EntityTypeMapping TypeName="SSBModel.UpAir">
+              <MappingFragment StoreEntitySet="UpAirs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UpBs">
+            <EntityTypeMapping TypeName="SSBModel.UpB">
+              <MappingFragment StoreEntitySet="UpBs">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UpSmashes">
+            <EntityTypeMapping TypeName="SSBModel.UpSmash">
+              <MappingFragment StoreEntitySet="UpSmashes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UThrows">
+            <EntityTypeMapping TypeName="SSBModel.UThrow">
+              <MappingFragment StoreEntitySet="UThrows">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UTilts">
+            <EntityTypeMapping TypeName="SSBModel.UTilt">
+              <MappingFragment StoreEntitySet="UTilts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StartUp" ColumnName="StartUp" />
+                <ScalarProperty Name="OnBlock" ColumnName="OnBlock" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GIF" ColumnName="GIF" />
+                <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

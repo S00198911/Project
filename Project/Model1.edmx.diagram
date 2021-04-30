@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f61d3b20c7ec4c1caab2afe5bbe3d55c" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="SSBModel.BackAir" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.BThrow" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.Character" Width="1.5" PointX="0.75" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DashAttack" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DashGrab" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DownAir" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DownB" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DownSmash" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DThrow" Width="1.5" PointX="3" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.DTilt" Width="1.5" PointX="3" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.ForwardAir" Width="1.5" PointX="3" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.FSmash" Width="1.5" PointX="3" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.FThrow" Width="1.5" PointX="3" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.FTilt" Width="1.5" PointX="3" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.Grab" Width="1.5" PointX="3" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.NeutralAir" Width="1.5" PointX="3" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.NeutralB" Width="1.5" PointX="3" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.PivotGrab" Width="1.5" PointX="3" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.Pummel" Width="1.5" PointX="3" PointY="56" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.SideB" Width="1.5" PointX="3" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.UpAir" Width="1.5" PointX="3" PointY="61.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.UpB" Width="1.5" PointX="3" PointY="65" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.UpSmash" Width="1.5" PointX="3" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.UThrow" Width="1.5" PointX="3" PointY="71.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSBModel.UTilt" Width="1.5" PointX="3" PointY="74" IsExpanded="true" />
+        <AssociationConnector Association="SSBModel.FK_CharacterBackAir" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterBThrow" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDashAttack" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDashGrab" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDownAir" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDownB" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDownSmash" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDThrow" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterDTilt" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterForwardAir" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterFSmash" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterFSmash1" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterFThrow" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterFTilt" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterGrab" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterNeutralAir" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterNeutralB" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterPivotGrab" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterPummel" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterSideB" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterUpAir" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterUpB" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterUpSmash" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterUThrow" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterUTilt" ManuallyRouted="false" />
+        <AssociationConnector Association="SSBModel.FK_CharacterFSmash11" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

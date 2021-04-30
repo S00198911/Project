@@ -4,100 +4,174 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project"
+        xmlns:gif="clr-namespace:XamlAnimatedGif;assembly=XamlAnimatedGif"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1765.5" Background="#FF252526" Loaded="Window_Loaded">
-    <Grid Margin="0,0,2,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <ListBox x:Name="ListBoxCharacters" HorizontalAlignment="Left" Height="375" VerticalAlignment="Top" Width="224" Margin="0,36,0,0" Background="#FF252526" BorderBrush="{x:Null}" SelectionChanged="ListBoxCharacters_SelectionChanged" FontSize="20" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Characters" VerticalAlignment="Top" Height="31" Width="224" Foreground="White" FontSize="22" Margin="10,0,0,0"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="1031" Margin="230,10,0,0" VerticalAlignment="Top" Width="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="554,28,0,0" TextWrapping="Wrap" Text="Forward Tilt" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="22"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="22" Margin="554,28,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="20" Margin="554,50,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="22" Margin="554,70,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="20" Margin="554,92,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="554,112,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="694,28,0,0" TextWrapping="Wrap" Text="Up Tilt" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="22"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="22" Margin="694,28,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="20" Margin="694,50,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="22" Margin="694,70,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="20" Margin="694,92,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="834,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="22"><Run Text="Down "/><Run Text="Tilt"/></TextBlock>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="22" Margin="834,28,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="20" Margin="834,50,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="22" Margin="834,70,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="20" Margin="834,92,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="974,28,0,0" TextWrapping="Wrap" Text="Dash Attack" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="22"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="22" Margin="974,28,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="20" Margin="974,50,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="22" Margin="974,70,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="20" Margin="974,92,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="694,112,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="834,112,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="974,112,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1114,28,0,0" TextWrapping="Wrap" Text="Dash Attack" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="22"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="22" Margin="1114,28,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="20" Margin="1114,50,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="22" Margin="1114,70,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="20" Margin="1114,92,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="1114,112,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="274,252,0,0" TextWrapping="Wrap" Text="Dash Attack" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="274,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="274,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="274,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="274,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="274,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="414,252,0,0" TextWrapping="Wrap" Text="Dash Attack" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="414,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="414,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="414,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="414,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="414,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="554,252,0,0" TextWrapping="Wrap" Text="Forward Smash" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="554,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="554,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="554,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="554,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="554,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="694,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"><Run Text="Up "/><Run Text="Smash"/></TextBlock>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="694,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="694,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="694,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="694,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="834,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21" Text="Down Smash"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="834,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="834,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="834,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="834,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="974,252,0,0" TextWrapping="Wrap" Text="Neutral B " VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="974,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="974,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="974,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="974,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="694,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="834,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="974,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1114,252,0,0" TextWrapping="Wrap" Text="Side B" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="1114,252,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="1114,273,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="1114,294,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="1114,315,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="1114,336,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="274,472,0,0" TextWrapping="Wrap" Text="Up B" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="274,472,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="274,493,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="274,514,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="274,535,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="274,556,0,0" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="414,472,0,0" TextWrapping="Wrap" Text="Down B" VerticalAlignment="Top" Foreground="White" FontSize="16" Panel.ZIndex="1" Width="118" Height="21"/>
-        <Rectangle Fill="#FF383838" HorizontalAlignment="Left" Height="21" Margin="414,472,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF00994D" HorizontalAlignment="Left" Height="21" Margin="414,493,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FFBF2000" HorizontalAlignment="Left" Height="21" Margin="414,514,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF3C647D" HorizontalAlignment="Left" Height="21" Margin="414,535,0,0" VerticalAlignment="Top" Width="130"/>
-        <Rectangle Fill="#FF404040" HorizontalAlignment="Left" Height="100" Margin="414,556,0,0" VerticalAlignment="Top" Width="130"/>
-        <Image x:Name="imageCharacter" HorizontalAlignment="Left" Height="184" Margin="318,28,0,0" VerticalAlignment="Top" Width="182"/>
+        Title="MainWindow" Height="722" Width="1353.5" Background="#FF252526" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="Divider" TargetType="Rectangle">
+            <Setter Property="Fill" Value="#FF383838"/>
+        </Style>
 
+        <Style x:Key="TextBlockHeader" TargetType="TextBlock">
+            <Setter Property="Background" Value="#FF383838"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style x:Key="StartUp" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#FF00994D"/>
+        </Style>
+
+        <Style x:Key="OnBlock" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#FFBF2000"/>
+        </Style>
+
+        <Style x:Key="Active" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#FF3C647D"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Height="787" VerticalAlignment="Top">
+        <TabControl TabStripPlacement="Top" Background="#FF252526" BorderBrush="{x:Null}">
+            <TabItem Header="Tilts Attacks" Width="125" Foreground="Black" Margin="234,0,-234,-2">
+                <Grid>
+                    <Image x:Name="imageCharacter1" HorizontalAlignment="Left" Height="300" Margin="656,62,0,0" VerticalAlignment="Top" Width="298"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Characters" VerticalAlignment="Top" Height="31" Width="224" Foreground="White" FontSize="22" Margin="0,5,0,0"/>
+                    <ListBox x:Name="ListBoxCharacters" HorizontalAlignment="Left" Height="375" VerticalAlignment="Top" Width="224" Margin="0,36,0,0" Background="#FF252526" BorderBrush="{x:Null}" SelectionChanged="ListBoxCharacters_SelectionChanged" FontSize="20" Foreground="White" DisplayMemberPath="Name"/>
+                    <Rectangle Style="{StaticResource Divider}" HorizontalAlignment="Left" Height="1031" Margin="230,10,0,0" VerticalAlignment="Top" Width="1"/>
+
+                    <Button Content="Add character to favorites" HorizontalAlignment="Left" Margin="41,519,0,0" VerticalAlignment="Top" Width="149" RenderTransformOrigin="-7.787,1.3" Click="Button_Click" Height="42"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,71,0,0" TextWrapping="Wrap" Text="Forward Tilt" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockFTiltS" FontSize="20" HorizontalAlignment="Left" Margin="314,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockFTiltB" FontSize="20" HorizontalAlignment="Left" Margin="314,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockFTiltA" FontSize="20" HorizontalAlignment="Left" Margin="314,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,345,0,0" TextWrapping="Wrap" Text="Up Tilt" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockUTiltS" FontSize="20" HorizontalAlignment="Left" Margin="314,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockUTiltB" FontSize="20" HorizontalAlignment="Left" Margin="314,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockUTiltA" FontSize="20" HorizontalAlignment="Left" Margin="314,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,71,0,0" TextWrapping="Wrap" Text="Down Tilt" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockDTiltS" FontSize="20" HorizontalAlignment="Left" Margin="1064,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockDTiltB" FontSize="20" HorizontalAlignment="Left" Margin="1064,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockDTiltA" FontSize="20" HorizontalAlignment="Left" Margin="1064,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Smash Attacks" Width="125" Foreground="Black" Margin="234,0,-234,-2">
+                <Grid>
+                    <Image x:Name="imageCharacter2" HorizontalAlignment="Left" Height="300" Margin="656,62,0,0" VerticalAlignment="Top" Width="298"/>
+                    <Rectangle Style="{StaticResource Divider}" HorizontalAlignment="Left" Height="1031" Margin="230,10,0,0" VerticalAlignment="Top" Width="1"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,71,0,0" TextWrapping="Wrap" Text="Forward Smash" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockFSmashS" FontSize="20" HorizontalAlignment="Left" Margin="314,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockFSmashB" FontSize="20" HorizontalAlignment="Left" Margin="314,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockFSmashA" FontSize="20" HorizontalAlignment="Left" Margin="314,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,345,0,0" TextWrapping="Wrap" Text="Up Smash" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockUSmashS" FontSize="20" HorizontalAlignment="Left" Margin="314,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockUSmashB" FontSize="20" HorizontalAlignment="Left" Margin="314,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockUSmashA" FontSize="20" HorizontalAlignment="Left" Margin="314,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,71,0,0" TextWrapping="Wrap" Text="Down Smash" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockDSmashS" FontSize="20" HorizontalAlignment="Left" Margin="1064,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockDSmashB" FontSize="20" HorizontalAlignment="Left" Margin="1064,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockDSmashA" FontSize="20" HorizontalAlignment="Left" Margin="1064,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Special Attacks" Width="125" Foreground="Black" Margin="234,0,-234,-2">
+                <Grid>
+                    <Image x:Name="imageCharacter3" HorizontalAlignment="Left" Height="300" Margin="656,62,0,0" VerticalAlignment="Top" Width="298"/>
+                    <Rectangle Style="{StaticResource Divider}" HorizontalAlignment="Left" Height="1031" Margin="230,10,0,0" VerticalAlignment="Top" Width="1"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,71,0,0" TextWrapping="Wrap" Text="Side Special" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockSBS" FontSize="20" HorizontalAlignment="Left" Margin="314,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockSBB" FontSize="20" HorizontalAlignment="Left" Margin="314,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockSBA" FontSize="20" HorizontalAlignment="Left" Margin="314,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,345,0,0" TextWrapping="Wrap" Text="Up Special" VerticalAlignment="Top"  FontSize="20" Panel.ZIndex="1" Width="200" Background="#FF383838" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockUBS" FontSize="20" HorizontalAlignment="Left" Margin="314,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockUBB" FontSize="20" HorizontalAlignment="Left" Margin="314,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockUBA" FontSize="20" HorizontalAlignment="Left" Margin="314,495,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,71,0,0" TextWrapping="Wrap" Text="Down Special" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockDBS" FontSize="20" HorizontalAlignment="Left" Margin="1064,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockDBB" FontSize="20" HorizontalAlignment="Left" Margin="1064,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockDBA" FontSize="20" HorizontalAlignment="Left" Margin="1064,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,345,0,0" TextWrapping="Wrap" Text="Neutral Special" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockNBS" FontSize="20" HorizontalAlignment="Left" Margin="1064,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockNBB" FontSize="20" HorizontalAlignment="Left" Margin="1064,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockNBA" FontSize="20" HorizontalAlignment="Left" Margin="1064,490,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Air Attacks" Width="125" Foreground="Black" Margin="234,0,-234,-2">
+                <Grid>
+                    <Image x:Name="imageCharacter4" HorizontalAlignment="Left" Height="300" Margin="656,62,0,0" VerticalAlignment="Top" Width="298"/>
+                    <Rectangle Style="{StaticResource Divider}" HorizontalAlignment="Left" Height="1031" Margin="230,10,0,0" VerticalAlignment="Top" Width="1"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,71,0,0" TextWrapping="Wrap" Text="Side Air" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200"  Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockFAirS" FontSize="20" HorizontalAlignment="Left" Margin="314,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockFAirB" FontSize="20" HorizontalAlignment="Left" Margin="314,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockFAirA" FontSize="20" HorizontalAlignment="Left" Margin="314,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,345,0,0" TextWrapping="Wrap" Text="Up Air" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200"  Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockUAirS" FontSize="20" HorizontalAlignment="Left" Margin="314,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockUAirB" FontSize="20" HorizontalAlignment="Left" Margin="314,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock x:Name="queryTextBlockUAirA" FontSize="20" HorizontalAlignment="Left" Margin="314,490,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Foreground="#FF3C647D" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,71,0,0" TextWrapping="Wrap" Text="Down Air" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockDAirS" FontSize="20" HorizontalAlignment="Left" Margin="1064,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockDAirB" FontSize="20" HorizontalAlignment="Left" Margin="1064,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock x:Name="queryTextBlockDAirA" FontSize="20" HorizontalAlignment="Left" Margin="1064,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,345,0,0" TextWrapping="Wrap" Text="Back Air" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}"  x:Name="queryTextBlockBAirS" FontSize="20" HorizontalAlignment="Left" Margin="1064,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockBAirB" FontSize="20" HorizontalAlignment="Left" Margin="1064,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock x:Name="queryTextBlockBAirA" FontSize="20" HorizontalAlignment="Left" Margin="1064,490,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="698,345,0,0" TextWrapping="Wrap" Text="Neutral Air" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}"  x:Name="queryTextBlockNAirS" FontSize="20" HorizontalAlignment="Left" Margin="698,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource OnBlock}" x:Name="queryTextBlockNAirB" FontSize="20" HorizontalAlignment="Left" Margin="698,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockNAirA" FontSize="20" HorizontalAlignment="Left" Margin="698,490,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Grab Attacks" Width="125" Foreground="Black" Margin="234,0,-234,-2">
+                <Grid>
+                    <Image x:Name="imageCharacter5" HorizontalAlignment="Left" Height="300" Margin="656,62,0,0" VerticalAlignment="Top" Width="298"/>
+                    <Rectangle Style="{StaticResource Divider}" HorizontalAlignment="Left" Height="1031" Margin="230,10,0,0" VerticalAlignment="Top" Width="1"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,71,0,0" TextWrapping="Wrap" Text="Grab" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockGrabS" FontSize="20" HorizontalAlignment="Left" Margin="314,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockGrabA" FontSize="20" HorizontalAlignment="Left" Margin="314,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,279,0,0" TextWrapping="Wrap" Text="Dash Grab" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockDashGrabS" FontSize="20" HorizontalAlignment="Left" Margin="314,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockDashGrabA" FontSize="20" HorizontalAlignment="Left" Margin="314,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="314,489,0,0" TextWrapping="Wrap" Text="Pivot Grab" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockPivotGrabS" FontSize="20" HorizontalAlignment="Left" Margin="314,529,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                    <TextBlock Style="{StaticResource Active}" x:Name="queryTextBlockPivotGrabA" FontSize="20" HorizontalAlignment="Left" Margin="314,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,71,0,0" TextWrapping="Wrap" Text="Pummel" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockPummelS" FontSize="20" HorizontalAlignment="Left" Margin="1064,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,179,0,0" TextWrapping="Wrap" Text="Front Throw" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockFThrowS" FontSize="20" HorizontalAlignment="Left" Margin="1064,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,291,0,0" TextWrapping="Wrap" Text="Back Throw" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockBThrowS" FontSize="20" HorizontalAlignment="Left" Margin="1064,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,407,0,0" TextWrapping="Wrap" Text="Up Throw" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockUThrowS" FontSize="20" HorizontalAlignment="Left" Margin="1064,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+
+                    <TextBlock Style="{StaticResource TextBlockHeader}" HorizontalAlignment="Left" Margin="1064,407,0,0" TextWrapping="Wrap" Text="Down Throw" VerticalAlignment="Top" FontSize="20" Panel.ZIndex="1" Width="200" Height="40"/>
+                    <TextBlock Style="{StaticResource StartUp}" x:Name="queryTextBlockDThrowS" FontSize="20" HorizontalAlignment="Left" Margin="1064,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsEnabled="False" Width="200" Height="50"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
